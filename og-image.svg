@@ -1,0 +1,57 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e3a8a"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- GPS Pin Icon -->
+  <g transform="translate(100, 180)">
+    <circle cx="60" cy="60" r="80" fill="rgba(30,64,175,0.3)"/>
+    <circle cx="60" cy="60" r="50" fill="#1e40af"/>
+    <text x="60" y="75" font-size="50" text-anchor="middle" fill="white">📍</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="280" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">Seguimiento Activo</text>
+
+  <!-- Subtitle with gradient -->
+  <text x="280" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#green)">GPS Vehicular Colombia</text>
+
+  <!-- Features -->
+  <text x="280" y="350" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)">Rastreo en tiempo real cada 30 segundos</text>
+  <text x="280" y="395" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)">Geocercas | Apagar motor remoto | Odómetro</text>
+
+  <!-- Pricing -->
+  <rect x="280" y="430" width="300" height="50" rx="25" fill="rgba(255,255,255,0.1)"/>
+  <text x="295" y="463" font-family="Arial, sans-serif" font-size="22" fill="white">Instalación $135.000</text>
+
+  <rect x="600" y="430" width="280" height="50" rx="25" fill="#10b981"/>
+  <text x="620" y="463" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">Mensual $45.000</text>
+
+  <!-- Certifications -->
+  <text x="280" y="530" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.6)">✓ Certificado MinTIC  ✓ Policía Nacional  ✓ App Monitor-X</text>
+
+  <!-- WhatsApp CTA -->
+  <rect x="900" y="500" width="250" height="60" rx="30" fill="#25D366"/>
+  <text x="960" y="540" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">WhatsApp</text>
+
+  <!-- Contact -->
+  <text x="280" y="580" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Mauricio Rodríguez</text>
+  <text x="560" y="580" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.7)">+57 311 311 1669</text>
+</svg>

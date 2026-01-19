@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Página Principal -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- Sección de Precios -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#precios</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Sección de Características -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#caracteristicas</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Sección de App Monitor-X -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#app</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Sección de Preguntas Frecuentes -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#faq</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
+
+    <!-- Sección de Contacto -->
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#contacto</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
 </urlset>
