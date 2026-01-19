@@ -1,55 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- Página Principal -->
+    <!-- ========== PAGINAS PRINCIPALES ========== -->
+
     <url>
         <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/en/"/>
         <lastmod>2025-01-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Sección de Precios -->
     <url>
-        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#precios</loc>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/en/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/"/>
         <lastmod>2025-01-19</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- ========== SERVICIOS ========== -->
+
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/servicios/</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/servicios/gps-carros.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/servicios/gps-motos.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/servicios/gps-camiones.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/servicios/gps-maquinaria.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Sección de Características -->
-    <url>
-        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#caracteristicas</loc>
-        <lastmod>2025-01-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
+    <!-- ========== INDUSTRIAS ========== -->
 
-    <!-- Sección de App Monitor-X -->
     <url>
-        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#app</loc>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/industrias/</loc>
         <lastmod>2025-01-19</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/industrias/flotas-transporte.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/industrias/domiciliarios.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Sección de Preguntas Frecuentes -->
+    <!-- ========== CIUDADES ========== -->
+
     <url>
-        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#faq</loc>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/</loc>
         <lastmod>2025-01-19</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Sección de Contacto -->
     <url>
-        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/#contacto</loc>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-bogota.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-medellin.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-cali.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-barranquilla.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-cartagena.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-bucaramanga.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-pereira.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-manizales.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-armenia.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-cucuta.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-ibague.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-santa-marta.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-villavicencio.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-pasto.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-neiva.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-monteria.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-valledupar.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/ciudades/gps-popayan.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ========== BLOG ========== -->
+
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/blog/</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/blog/como-funciona-gps-vehicular.html</loc>
         <lastmod>2025-01-19</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/blog/beneficios-gps-carro.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/blog/gps-vs-robo-carros.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/blog/geocercas-que-son.html</loc>
+        <lastmod>2025-01-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
