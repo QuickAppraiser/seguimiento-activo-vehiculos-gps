@@ -39,7 +39,7 @@
 
   <!-- Pricing -->
   <rect x="280" y="430" width="300" height="50" rx="25" fill="rgba(255,255,255,0.1)"/>
-  <text x="295" y="463" font-family="Arial, sans-serif" font-size="22" fill="white">Instalación $135.000</text>
+  <text x="295" y="463" font-family="Arial, sans-serif" font-size="22" fill="white">Instalación $130.000</text>
 
   <rect x="600" y="430" width="280" height="50" rx="25" fill="#10b981"/>
   <text x="620" y="463" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">Mensual $45.000</text>
