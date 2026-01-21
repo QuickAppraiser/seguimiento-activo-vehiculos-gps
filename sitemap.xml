@@ -196,6 +196,21 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- ========== PAGINAS LEGALES ========== -->
+
+    <url>
+        <loc>https://gpscarro.com/privacidad.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/terminos.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
     <!-- ========== BLOG ========== -->
 
     <url>
