@@ -1,7 +1,7 @@
 # ==============================================
 # Robots.txt - Seguimiento Activo GPS Colombia
 # Mauricio Rodriguez - +57 311 311 1669
-# https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/
+# https://gpscarro.com/
 # ==============================================
 
 # Permitir todos los robots
@@ -10,7 +10,7 @@ Allow: /
 Disallow: /404.html
 
 # Sitemap location
-Sitemap: https://quickappraiser.github.io/seguimiento-activo-vehiculos-gps/sitemap.xml
+Sitemap: https://gpscarro.com/sitemap.xml
 
 # Crawl-delay para no sobrecargar
 Crawl-delay: 1
