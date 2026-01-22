@@ -62,19 +62,43 @@
 
     <url>
         <loc>https://gpscarro.com/industrias/</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/industrias/flotas-transporte.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/industrias/domiciliarios.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/industrias/agricultura.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/industrias/construccion.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/industrias/rent-a-car.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/industrias/taxis.html</loc>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -143,57 +167,57 @@
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-cucuta.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-ibague.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-santa-marta.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-villavicencio.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-pasto.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-neiva.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-monteria.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-valledupar.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gpscarro.com/ciudades/gps-popayan.html</loc>
-        <lastmod>2025-01-19</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
 
     <!-- ========== PAGINAS LEGALES ========== -->
@@ -240,6 +264,18 @@
     <url>
         <loc>https://gpscarro.com/blog/geocercas-que-son.html</loc>
         <lastmod>2025-01-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/blog/gps-flotas-ahorro.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/blog/app-monitor-x-tutorial.html</loc>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
