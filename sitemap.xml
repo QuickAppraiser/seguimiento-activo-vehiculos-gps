@@ -219,6 +219,90 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-tunja.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-riohacha.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-sincelejo.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-florencia.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-yopal.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-quibdo.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-arauca.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-san-andres.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-mocoa.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-leticia.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-san-jose-del-guaviare.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-mitu.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-puerto-carreno.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/ciudades/gps-puerto-inirida.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
     <!-- ========== PAGINAS LEGALES ========== -->
 
@@ -282,6 +366,12 @@
     <url>
         <loc>https://gpscarro.com/blog/gps-motocicletas-guia-completa.html</loc>
         <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gpscarro.com/blog/gps-vs-airtag-comparacion.html</loc>
+        <lastmod>2026-01-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
