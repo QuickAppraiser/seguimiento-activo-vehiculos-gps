@@ -302,6 +302,29 @@
             --whatsapp-dark: #128C7E;
         }
 
+        [data-theme="dark"] {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --primary-light: #60a5fa;
+            --dark: #e2e8f0;
+            --gray: #94a3b8;
+            --light: #1e293b;
+            --white: #0f172a;
+        }
+
+        [data-theme="dark"] body { background: #0f172a; }
+        [data-theme="dark"] .header { background: rgba(15, 23, 42, 0.95); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+        [data-theme="dark"] .pricing-card,
+        [data-theme="dark"] .faq-item,
+        [data-theme="dark"] .hero-phone { background: #1e293b; }
+        [data-theme="dark"] .features,
+        [data-theme="dark"] .coverage { background: #0f172a; }
+        [data-theme="dark"] .mobile-nav { background: #1e293b; }
+
+        body, .header, .pricing-card, .feature-card, .faq-item {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -435,6 +458,90 @@
             height: 3px;
             background: var(--dark);
             border-radius: 3px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        [data-theme="dark"] .lang-switch { border-left-color: #475569; }
+
+        .dark-mode-toggle {
+            background: none;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            color: var(--dark);
+        }
+
+        .dark-mode-toggle:hover { border-color: var(--primary); color: var(--primary); }
+        [data-theme="dark"] .dark-mode-toggle { border-color: #475569; }
+        .dark-mode-toggle .icon-sun { display: none; }
+        [data-theme="dark"] .dark-mode-toggle .icon-moon { display: none; }
+        [data-theme="dark"] .dark-mode-toggle .icon-sun { display: block; }
+
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1001;
+        }
+
+        .mobile-nav-overlay.active { display: block; }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: white;
+            z-index: 1002;
+            padding: 80px 30px 30px;
+            transition: right 0.3s;
+            box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+        }
+
+        .mobile-nav.active { right: 0; }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 15px 0;
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--light);
+        }
+
+        .mobile-nav a:hover { color: var(--primary); }
+
+        .mobile-nav-actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
 
         /* Hero Section */
@@ -993,6 +1100,10 @@
             .mobile-menu {
                 display: flex;
             }
+
+            .header-actions .dark-mode-toggle {
+                order: -1;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1034,14 +1145,35 @@
                         <a href="#" class="active">EN</a>
                     </div>
                 </nav>
-                <div class="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="header-actions">
+                    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <span class="icon-moon">🌙</span>
+                        <span class="icon-sun">☀️</span>
+                    </button>
+                    <div class="mobile-menu" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <div class="mobile-nav-actions">
+            <a href="../" style="font-weight:600;color:var(--gray);text-decoration:none">ES</a>
+            <span style="color:var(--gray)">|</span>
+            <a href="#" style="font-weight:600;color:var(--primary)">EN</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <main role="main">
@@ -1389,8 +1521,43 @@
                         block: 'start'
                     });
                 }
+                // Close mobile nav if open
+                document.getElementById('mobileNav').classList.remove('active');
+                document.getElementById('mobileNavOverlay').classList.remove('active');
             });
         });
+
+        // Dark Mode Toggle
+        (function() {
+            const toggle = document.querySelector('.dark-mode-toggle');
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+            toggle.addEventListener('click', function() {
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                if (isDark) {
+                    document.documentElement.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        })();
+
+        // Mobile Menu
+        (function() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('mobileNav');
+            const overlay = document.getElementById('mobileNavOverlay');
+            const close = document.querySelector('.mobile-nav-close');
+            function openMenu() { nav.classList.add('active'); overlay.classList.add('active'); }
+            function closeMenu() { nav.classList.remove('active'); overlay.classList.remove('active'); }
+            btn.addEventListener('click', openMenu);
+            close.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        })();
     </script>
 </body>
 </html>
