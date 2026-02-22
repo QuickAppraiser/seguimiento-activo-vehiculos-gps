@@ -1435,6 +1435,43 @@
             line-height: 1;
         }
 
+        /* Testimonials Section */
+        .testimonials { background: var(--light); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .testimonial-card { background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: relative; }
+        .testimonial-card::before { content: '"'; position: absolute; top: 15px; right: 25px; font-size: 4rem; color: var(--primary-light); opacity: 0.3; font-family: Georgia, serif; line-height: 1; }
+        .testimonial-stars { color: #f59e0b; font-size: 1.1rem; margin-bottom: 12px; letter-spacing: 2px; }
+        .testimonial-text { color: var(--gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; }
+        .testimonial-name { font-weight: 700; color: var(--dark); }
+        .testimonial-role { font-size: 0.85rem; color: var(--gray); }
+        [data-theme="dark"] .testimonial-card { background: #1e293b; }
+        [data-theme="dark"] .testimonial-card::before { color: var(--primary); }
+
+        /* Contact Form Section */
+        .contact-form-section { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); color: white; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .contact-info h2 { font-size: 2rem; margin-bottom: 15px; }
+        .contact-info p { opacity: 0.9; margin-bottom: 25px; line-height: 1.7; }
+        .contact-detail { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 1.05rem; }
+        .contact-detail-icon { width: 40px; height: 40px; background: rgba(255,255,255,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .contact-form { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+        .contact-form h3 { color: var(--dark); margin-bottom: 20px; font-size: 1.3rem; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gray); margin-bottom: 6px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 2px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.95rem; transition: border-color 0.3s; color: var(--dark); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .btn-submit { width: 100%; padding: 14px; background: var(--whatsapp); color: white; border: none; border-radius: 10px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-family: inherit; }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+        @media (max-width: 968px) { .contact-grid { grid-template-columns: 1fr; gap: 30px; } }
+        [data-theme="dark"] .contact-form-section { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        [data-theme="dark"] .contact-form { background: #1e293b; }
+        [data-theme="dark"] .contact-form h3 { color: #e2e8f0; }
+        [data-theme="dark"] .form-group label { color: #94a3b8; }
+        [data-theme="dark"] .form-group input, [data-theme="dark"] .form-group select, [data-theme="dark"] .form-group textarea { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+
         /* FAQ Section */
         .faq {
             background: var(--light);
@@ -1961,6 +1998,9 @@
             <div class="container">
                 <h2 class="section-title" id="pricing-title">Precios GPS Vehicular Colombia</h2>
                 <p class="section-subtitle">Sin costos ocultos. El dispositivo GPS es prestado y se devuelve al finalizar el servicio.</p>
+                <div style="text-align:center;margin-bottom:30px;">
+                    <img src="img/gps-device.png" alt="Dispositivo GPS vehicular Seguimiento Activo - rastreador satelital" width="400" height="300" style="max-width:300px;height:auto;">
+                </div>
                 <div class="pricing-cards">
                     <article class="pricing-card" itemscope itemtype="https://schema.org/Offer">
                         <div class="pricing-icon" aria-hidden="true">🔧</div>
@@ -1998,6 +2038,10 @@
             <div class="container">
                 <h2 class="section-title" id="features-title">Características del Sistema GPS</h2>
                 <p class="section-subtitle">Tecnología de punta para el monitoreo completo de tus vehículos con Seguimiento Activo</p>
+                <div style="display:flex;gap:20px;justify-content:center;margin-bottom:40px;flex-wrap:wrap;">
+                    <img src="img/feature-tracking.png" alt="Rastreo GPS en tiempo real de vehículos en Colombia" width="600" height="400" style="max-width:48%;height:auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.15);">
+                    <img src="img/feature-geofence.png" alt="Geocercas GPS para control de zonas y alertas" width="600" height="400" style="max-width:48%;height:auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.15);">
+                </div>
                 <div class="features-grid">
                     <article class="feature-card">
                         <div class="feature-icon" aria-hidden="true">📍</div>
@@ -2079,9 +2123,9 @@
                     </div>
                 </div>
                 <div class="app-video">
-                    <a href="https://youtu.be/tfInIoozpU8" target="_blank" rel="noopener" class="video-placeholder" aria-label="Ver video demo de la app Monitor-X">
-                        <div class="play-button" aria-hidden="true">▶</div>
-                        <span>Ver demo de la app Monitor-X</span>
+                    <img src="img/feature-app.png" alt="App Monitor-X para rastreo GPS vehicular - interfaz iOS y Android" width="600" height="400" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+                    <a href="https://youtu.be/tfInIoozpU8" target="_blank" rel="noopener" style="display:inline-block;margin-top:15px;color:var(--primary);font-weight:600;text-decoration:none;" aria-label="Ver video demo de la app Monitor-X">
+                        ▶ Ver video demo de Monitor-X
                     </a>
                 </div>
             </div>
@@ -2094,12 +2138,12 @@
                 <p class="section-subtitle">Respaldados por certificaciones oficiales y años de experiencia en GPS vehicular</p>
                 <div class="trust-grid">
                     <article class="trust-item">
-                        <div class="trust-icon" aria-hidden="true">🏛️</div>
+                        <img src="img/trust-mintic.png" alt="Certificación MinTIC Colombia" width="80" height="80" style="margin-bottom:10px;">
                         <h3>Certificación MinTIC</h3>
                         <p>Registrados ante el Ministerio de Tecnologías de la Información y Comunicaciones de Colombia.</p>
                     </article>
                     <article class="trust-item">
-                        <div class="trust-icon" aria-hidden="true">👮</div>
+                        <img src="img/trust-police.png" alt="Autorizado Policía Nacional de Colombia" width="80" height="80" style="margin-bottom:10px;">
                         <h3>Policía Nacional de Colombia</h3>
                         <p>Proveedor autorizado para rastreo satelital de maquinaria amarilla con la Policía Nacional.</p>
                     </article>
@@ -2132,9 +2176,7 @@
                     </ul>
                 </div>
                 <div class="coverage-map">
-                    <div class="colombia-icon" aria-hidden="true">🇨🇴</div>
-                    <h3>Cobertura Nacional GPS</h3>
-                    <p>Desde La Guajira hasta el Amazonas</p>
+                    <img src="img/colombia-map.png" alt="Mapa de cobertura GPS vehicular en Colombia - 32 capitales departamentales" width="500" height="600" style="max-width:100%;height:auto;border-radius:16px;">
                 </div>
             </div>
         </section>
@@ -2245,6 +2287,122 @@
                 <div style="text-align:center;margin-top:2rem;">
                     <a href="blog/" class="btn btn-secondary" style="background:var(--primary);color:white;border:none;">Ver Todos los Artículos →</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 class="section-title" id="testimonials-title">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle">Miles de vehículos protegidos en toda Colombia con Seguimiento Activo</p>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">Instalé el GPS en mi camioneta hace 6 meses. La tranquilidad de saber dónde está mi vehículo en todo momento no tiene precio. La app Monitor-X es muy fácil de usar.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">CR</div>
+                            <div>
+                                <div class="testimonial-name">Carlos Ramírez</div>
+                                <div class="testimonial-role">Empresario - Bogotá</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">Tengo 12 camiones con GPS de Seguimiento Activo. Redujimos el consumo de combustible un 15% gracias al control de rutas. El soporte de Mauricio es excelente.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">LP</div>
+                            <div>
+                                <div class="testimonial-name">Laura Pérez</div>
+                                <div class="testimonial-role">Gerente de Logística - Medellín</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">Me robaron la moto y gracias al GPS la recuperamos en menos de 2 horas. La policía pudo rastrearla en tiempo real. 100% recomendado.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">AM</div>
+                            <div>
+                                <div class="testimonial-name">Andrés Martínez</div>
+                                <div class="testimonial-role">Domiciliario - Cali</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section section" id="contacto" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2 id="contact-title">Cotiza tu GPS Vehicular</h2>
+                    <p>Obtén tu GPS instalado en menos de 24 horas. Envíanos tus datos y Mauricio te contactará personalmente para agendar la instalación.</p>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">📱</div>
+                        <div>
+                            <strong>WhatsApp</strong><br>
+                            <a href="https://wa.me/573188383917" style="color:white;text-decoration:underline">+57 318 838 3917</a>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            contacto@seguimientoactivo.com
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">🕐</div>
+                        <div>
+                            <strong>Horario</strong><br>
+                            Lunes a Sábado: 7am - 7pm
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">🇨🇴</div>
+                        <div>
+                            <strong>Cobertura</strong><br>
+                            Todo Colombia - 32 departamentos
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formsubmit.co/contacto@seguimientoactivo.com" method="POST">
+                    <h3>Solicitar Cotización Gratis</h3>
+                    <input type="hidden" name="_subject" value="Nueva cotización GPS - gpscarro.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://gpscarro.com/#contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">WhatsApp / Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Bogotá, Medellín, Cali...">
+                    </div>
+                    <div class="form-group">
+                        <label for="vehiculo">Tipo de vehículo</label>
+                        <select id="vehiculo" name="vehiculo">
+                            <option value="">Selecciona...</option>
+                            <option value="carro">Carro particular</option>
+                            <option value="moto">Motocicleta</option>
+                            <option value="camion">Camión / Furgón</option>
+                            <option value="flota">Flota de vehículos</option>
+                            <option value="maquinaria">Maquinaria pesada</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje (opcional)</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="¿Cuántos vehículos? ¿Alguna pregunta?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">📱 Enviar Cotización por WhatsApp</button>
+                </form>
             </div>
         </section>
 
