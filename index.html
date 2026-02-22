@@ -91,7 +91,7 @@
         "alternateName": ["Seguimiento Activo", "GPS Vehicular Colombia", "Rastreo GPS Colombia"],
         "description": "Servicio de rastreo y monitoreo GPS vehicular en tiempo real para carros, motos, camiones y maquinaria en toda Colombia. Certificado MinTIC y Policía Nacional.",
         "url": "https://gpscarro.com/",
-        "telephone": "+573113111669",
+        "telephone": "+573188383917",
         "email": "contacto@seguimientoactivo.com",
         "image": "https://gpscarro.com/og-image.svg",
         "logo": "https://gpscarro.com/logo.png",
@@ -114,13 +114,13 @@
         },
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+573113111669",
+            "telephone": "+573188383917",
             "contactType": "sales",
             "availableLanguage": "Spanish",
             "areaServed": "CO"
         },
         "sameAs": [
-            "https://wa.me/573113111669",
+            "https://wa.me/573188383917",
             "http://www.seguimientoactivo.com"
         ],
         "hasOfferCatalog": {
@@ -193,7 +193,7 @@
         "provider": {
             "@type": "LocalBusiness",
             "name": "Seguimiento Activo GPS - Mauricio Rodríguez",
-            "telephone": "+573113111669"
+            "telephone": "+573188383917"
         },
         "areaServed": {
             "@type": "Country",
@@ -1356,13 +1356,97 @@
             padding: 10px 20px;
             border-radius: 50px;
             font-size: 0.9rem;
-            color: var(--gray);
+            color: var(--dark);
+            font-weight: 500;
+            text-decoration: none;
             transition: all 0.3s;
+            border: 2px solid transparent;
         }
 
-        .city-tag:hover {
+        a.city-tag:hover {
             background: var(--primary);
             color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        /* Services Overview */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .service-link-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: block;
+        }
+
+        .service-link-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(30, 64, 175, 0.15);
+        }
+
+        .service-icon { font-size: 2.5rem; display: block; margin-bottom: 15px; }
+        .service-link-card h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--primary); }
+        .service-link-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 15px; }
+        .service-price { background: var(--primary); color: white; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; }
+
+        /* Blog Preview */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .blog-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: block;
+        }
+
+        .blog-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(30, 64, 175, 0.15);
+        }
+
+        .blog-tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+        .blog-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--dark); }
+        .blog-card p { color: var(--gray); font-size: 0.9rem; }
+
+        /* Footer Grid */
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; text-align: left; }
+        .footer-col h4 { margin-bottom: 15px; font-size: 1.1rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 8px; }
+        .footer-col ul li a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .footer-col ul li a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .footer-bottom p { font-size: 0.85rem; opacity: 0.7; }
+        .footer-legal { display: flex; gap: 20px; }
+        .footer-legal a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; }
+        .footer-legal a:hover { color: white; }
+
+        @media (max-width: 768px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
         }
 
         /* Contact Section */
@@ -1602,14 +1686,14 @@
             </a>
             <nav role="navigation" aria-label="Menú principal">
                 <ul class="nav-links">
-                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#precios">Precios</a></li>
-                    <li><a href="#app">App Monitor-X</a></li>
-                    <li><a href="#faq">Preguntas</a></li>
+                    <li><a href="ciudades/">Ciudades</a></li>
+                    <li><a href="blog/">Blog</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/573113111669?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="header-cta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <a href="https://wa.me/573188383917?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="header-cta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 WhatsApp
             </a>
@@ -1634,7 +1718,7 @@
                     <h1 id="hero-title">Seguimiento Activo: <span>Rastreo GPS Vehicular</span> en Tiempo Real</h1>
                     <p>Monitorea tu carro, moto, camión o maquinaria pesada desde tu celular. Ubicación cada 30 segundos, alertas instantáneas y control total las 24 horas en toda Colombia.</p>
                     <div class="hero-buttons">
-                        <a href="https://wa.me/573113111669?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="btn btn-primary" target="_blank" rel="noopener">
+                        <a href="https://wa.me/573188383917?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="btn btn-primary" target="_blank" rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                             Cotizar GPS Ahora
                         </a>
@@ -1870,31 +1954,111 @@
             </div>
         </section>
 
+        <!-- Services Section -->
+        <section class="services-overview section" id="servicios" aria-labelledby="services-title">
+            <div class="container">
+                <h2 class="section-title" id="services-title">Nuestros Servicios de GPS Vehicular</h2>
+                <p class="section-subtitle">Soluciones de rastreo satelital para todo tipo de vehículo en Colombia</p>
+                <div class="services-grid">
+                    <a href="servicios/gps-carros.html" class="service-link-card">
+                        <span class="service-icon">🚗</span>
+                        <h3>GPS para Carros</h3>
+                        <p>Rastreo satelital para vehículos particulares. Protege tu inversión con monitoreo 24/7.</p>
+                        <span class="service-price">Desde $45.000/mes</span>
+                    </a>
+                    <a href="servicios/gps-motos.html" class="service-link-card">
+                        <span class="service-icon">🏍️</span>
+                        <h3>GPS para Motos</h3>
+                        <p>Instalación oculta para motocicletas. Ideal contra el robo de motos en Colombia.</p>
+                        <span class="service-price">Desde $45.000/mes</span>
+                    </a>
+                    <a href="servicios/gps-camiones.html" class="service-link-card">
+                        <span class="service-icon">🚛</span>
+                        <h3>GPS para Camiones</h3>
+                        <p>Control de flotas de carga. Optimiza rutas, reduce costos y mejora seguridad.</p>
+                        <span class="service-price">Desde $45.000/mes</span>
+                    </a>
+                    <a href="servicios/gps-maquinaria.html" class="service-link-card">
+                        <span class="service-icon">🚜</span>
+                        <h3>GPS Maquinaria Amarilla</h3>
+                        <p>Rastreo certificado para maquinaria pesada. Autorizado por Policía Nacional.</p>
+                        <span class="service-price">Desde $45.000/mes</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Cities Section for Local SEO -->
         <section class="cities" aria-labelledby="cities-title">
             <div class="container">
-                <h2 class="cities-title" id="cities-title">GPS Vehicular disponible en toda Colombia</h2>
+                <h2 class="cities-title" id="cities-title">GPS Vehicular en las 32 Capitales de Colombia</h2>
+                <p style="text-align:center;color:var(--gray);margin-bottom:2rem;">Instalación profesional de GPS en toda Colombia. Haz clic en tu ciudad para más información.</p>
                 <div class="cities-grid">
-                    <span class="city-tag">GPS Bogotá</span>
-                    <span class="city-tag">GPS Medellín</span>
-                    <span class="city-tag">GPS Cali</span>
-                    <span class="city-tag">GPS Barranquilla</span>
-                    <span class="city-tag">GPS Cartagena</span>
-                    <span class="city-tag">GPS Bucaramanga</span>
-                    <span class="city-tag">GPS Pereira</span>
-                    <span class="city-tag">GPS Manizales</span>
-                    <span class="city-tag">GPS Armenia</span>
-                    <span class="city-tag">GPS Quindío</span>
-                    <span class="city-tag">GPS Eje Cafetero</span>
-                    <span class="city-tag">GPS Cúcuta</span>
-                    <span class="city-tag">GPS Ibagué</span>
-                    <span class="city-tag">GPS Santa Marta</span>
-                    <span class="city-tag">GPS Villavicencio</span>
-                    <span class="city-tag">GPS Pasto</span>
-                    <span class="city-tag">GPS Neiva</span>
-                    <span class="city-tag">GPS Montería</span>
-                    <span class="city-tag">GPS Valledupar</span>
-                    <span class="city-tag">GPS Popayán</span>
+                    <a href="ciudades/gps-bogota.html" class="city-tag">GPS Bogotá</a>
+                    <a href="ciudades/gps-medellin.html" class="city-tag">GPS Medellín</a>
+                    <a href="ciudades/gps-cali.html" class="city-tag">GPS Cali</a>
+                    <a href="ciudades/gps-barranquilla.html" class="city-tag">GPS Barranquilla</a>
+                    <a href="ciudades/gps-cartagena.html" class="city-tag">GPS Cartagena</a>
+                    <a href="ciudades/gps-bucaramanga.html" class="city-tag">GPS Bucaramanga</a>
+                    <a href="ciudades/gps-pereira.html" class="city-tag">GPS Pereira</a>
+                    <a href="ciudades/gps-manizales.html" class="city-tag">GPS Manizales</a>
+                    <a href="ciudades/gps-armenia.html" class="city-tag">GPS Armenia</a>
+                    <a href="ciudades/gps-cucuta.html" class="city-tag">GPS Cúcuta</a>
+                    <a href="ciudades/gps-ibague.html" class="city-tag">GPS Ibagué</a>
+                    <a href="ciudades/gps-santa-marta.html" class="city-tag">GPS Santa Marta</a>
+                    <a href="ciudades/gps-villavicencio.html" class="city-tag">GPS Villavicencio</a>
+                    <a href="ciudades/gps-pasto.html" class="city-tag">GPS Pasto</a>
+                    <a href="ciudades/gps-neiva.html" class="city-tag">GPS Neiva</a>
+                    <a href="ciudades/gps-monteria.html" class="city-tag">GPS Montería</a>
+                    <a href="ciudades/gps-valledupar.html" class="city-tag">GPS Valledupar</a>
+                    <a href="ciudades/gps-popayan.html" class="city-tag">GPS Popayán</a>
+                    <a href="ciudades/gps-tunja.html" class="city-tag">GPS Tunja</a>
+                    <a href="ciudades/gps-riohacha.html" class="city-tag">GPS Riohacha</a>
+                    <a href="ciudades/gps-sincelejo.html" class="city-tag">GPS Sincelejo</a>
+                    <a href="ciudades/gps-florencia.html" class="city-tag">GPS Florencia</a>
+                    <a href="ciudades/gps-yopal.html" class="city-tag">GPS Yopal</a>
+                    <a href="ciudades/gps-quibdo.html" class="city-tag">GPS Quibdó</a>
+                    <a href="ciudades/gps-arauca.html" class="city-tag">GPS Arauca</a>
+                    <a href="ciudades/gps-san-andres.html" class="city-tag">GPS San Andrés</a>
+                    <a href="ciudades/gps-mocoa.html" class="city-tag">GPS Mocoa</a>
+                    <a href="ciudades/gps-leticia.html" class="city-tag">GPS Leticia</a>
+                    <a href="ciudades/gps-san-jose-del-guaviare.html" class="city-tag">GPS San José</a>
+                    <a href="ciudades/gps-mitu.html" class="city-tag">GPS Mitú</a>
+                    <a href="ciudades/gps-puerto-carreno.html" class="city-tag">GPS Pto. Carreño</a>
+                    <a href="ciudades/gps-puerto-inirida.html" class="city-tag">GPS Pto. Inírida</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-preview section" id="blog" aria-labelledby="blog-title">
+            <div class="container">
+                <h2 class="section-title" id="blog-title">Blog: Guías y Consejos sobre GPS Vehicular</h2>
+                <p class="section-subtitle">Información útil para proteger tu vehículo en Colombia</p>
+                <div class="blog-grid">
+                    <a href="blog/gps-motocicletas-guia-completa.html" class="blog-card">
+                        <span class="blog-tag">Guía Completa</span>
+                        <h3>GPS para Motocicletas Colombia 2026</h3>
+                        <p>Todo sobre GPS para motos: precios, instalación, ventajas y cómo proteger tu moto del robo.</p>
+                    </a>
+                    <a href="blog/gps-vs-airtag-comparacion.html" class="blog-card">
+                        <span class="blog-tag">Comparación</span>
+                        <h3>GPS Vehicular vs Apple AirTag 2026</h3>
+                        <p>Comparación completa entre GPS profesional y AirTag. Descubre cuál es mejor para tu vehículo.</p>
+                    </a>
+                    <a href="blog/como-funciona-gps-vehicular.html" class="blog-card">
+                        <span class="blog-tag">Educativo</span>
+                        <h3>¿Cómo Funciona el GPS Vehicular?</h3>
+                        <p>Guía técnica sobre el funcionamiento del rastreo GPS satelital para vehículos.</p>
+                    </a>
+                    <a href="blog/gps-vs-robo-carros.html" class="blog-card">
+                        <span class="blog-tag">Seguridad</span>
+                        <h3>GPS vs Robo de Carros en Colombia</h3>
+                        <p>Estadísticas de robo vehicular y cómo el GPS ayuda a recuperar vehículos robados.</p>
+                    </a>
+                </div>
+                <div style="text-align:center;margin-top:2rem;">
+                    <a href="blog/" class="btn btn-secondary" style="background:var(--primary);color:white;border:none;">Ver Todos los Artículos →</a>
                 </div>
             </div>
         </section>
@@ -1964,7 +2128,7 @@
                 <p>Contáctame ahora y te cuento todos los detalles del servicio GPS de Seguimiento Activo. Sin compromiso, respondo todas tus dudas.</p>
                 <p class="contact-name">Mauricio Rodríguez</p>
                 <p class="contact-role">Asesor Comercial - Seguimiento Activo GPS Colombia</p>
-                <a href="https://wa.me/573113111669?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="whatsapp-big-btn" target="_blank" rel="noopener">
+                <a href="https://wa.me/573188383917?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="whatsapp-big-btn" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Escribir por WhatsApp
                 </a>
@@ -1975,22 +2139,54 @@
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
-            <p><strong>Seguimiento Activo GPS Colombia</strong> - Mauricio Rodríguez</p>
-            <p>Rastreo GPS Vehicular | Monitoreo Satelital | App Monitor-X</p>
-            <p>WhatsApp: <a href="https://wa.me/573113111669">+57 311 311 1669</a></p>
-            <div class="footer-links">
-                <a href="#precios">Precios GPS</a>
-                <a href="#caracteristicas">Características</a>
-                <a href="#app">App Monitor-X</a>
-                <a href="#faq">Preguntas Frecuentes</a>
-                <a href="#contacto">Contacto</a>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Seguimiento Activo GPS</h4>
+                    <p>Empresa colombiana especializada en rastreo GPS vehicular. +15 años protegiendo vehículos en todo el país.</p>
+                    <p style="margin-top:10px;"><strong>WhatsApp:</strong> <a href="https://wa.me/573188383917">+57 318 838 3917</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios/gps-carros.html">GPS para Carros</a></li>
+                        <li><a href="servicios/gps-motos.html">GPS para Motos</a></li>
+                        <li><a href="servicios/gps-camiones.html">GPS para Camiones</a></li>
+                        <li><a href="servicios/gps-maquinaria.html">GPS Maquinaria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ciudades Principales</h4>
+                    <ul>
+                        <li><a href="ciudades/gps-bogota.html">GPS Bogotá</a></li>
+                        <li><a href="ciudades/gps-medellin.html">GPS Medellín</a></li>
+                        <li><a href="ciudades/gps-cali.html">GPS Cali</a></li>
+                        <li><a href="ciudades/gps-barranquilla.html">GPS Barranquilla</a></li>
+                        <li><a href="ciudades/">Ver 32 ciudades →</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Blog</h4>
+                    <ul>
+                        <li><a href="blog/gps-motocicletas-guia-completa.html">GPS para Motos: Guía</a></li>
+                        <li><a href="blog/gps-vs-airtag-comparacion.html">GPS vs AirTag</a></li>
+                        <li><a href="blog/como-funciona-gps-vehicular.html">¿Cómo funciona el GPS?</a></li>
+                        <li><a href="blog/">Ver todos los artículos →</a></li>
+                    </ul>
+                </div>
             </div>
-            <p style="margin-top: 20px; font-size: 0.85rem;">Servicio autorizado de <a href="http://www.seguimientoactivo.com" target="_blank" rel="noopener">Seguimiento Activo</a> | Certificado MinTIC | Policía Nacional de Colombia</p>
+            <div class="footer-bottom">
+                <p>© 2026 Seguimiento Activo GPS Colombia - Mauricio Rodríguez | Certificado MinTIC | Policía Nacional</p>
+                <div class="footer-legal">
+                    <a href="privacidad.html">Privacidad</a>
+                    <a href="terminos.html">Términos</a>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/573113111669?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.me/573188383917?text=Hola%20Mauricio,%20quiero%20información%20sobre%20el%20GPS%20vehicular%20de%20Seguimiento%20Activo" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
