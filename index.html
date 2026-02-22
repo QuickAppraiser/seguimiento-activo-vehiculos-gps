@@ -450,8 +450,7 @@
         [data-theme="dark"] .header { background: rgba(15, 23, 42, 0.95); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
         [data-theme="dark"] .pricing-card,
         [data-theme="dark"] .faq-item,
-        [data-theme="dark"] .trust-icon,
-        [data-theme="dark"] .floating-card { background: #1e293b; }
+        [data-theme="dark"] .trust-icon { background: #1e293b; }
         [data-theme="dark"] .features,
         [data-theme="dark"] .coverage,
         [data-theme="dark"] .cities { background: #0f172a; }
@@ -839,173 +838,18 @@
             position: relative;
         }
 
-        .phone-mockup {
-            background: linear-gradient(145deg, #1a1a2e, #16213e);
-            border-radius: 40px;
-            padding: 15px;
-            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+        .hero-phone-img {
             max-width: 320px;
+            height: auto;
             margin: 0 auto;
-            border: 3px solid rgba(255,255,255,0.1);
-        }
-
-        .phone-screen {
-            background: #0a0a0f;
-            border-radius: 28px;
-            overflow: hidden;
-            aspect-ratio: 9/16;
-            position: relative;
-        }
-
-        .phone-screen-content {
-            padding: 20px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .app-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .app-title {
-            color: white;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .app-status {
-            background: var(--secondary);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .map-placeholder {
-            flex: 1;
-            background: linear-gradient(180deg, #1a365d 0%, #2c5282 100%);
-            border-radius: 15px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .map-grid {
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-
-        .map-marker {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            border-radius: 50% 50% 50% 0;
-            transform: translate(-50%, -50%) rotate(-45deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 20px rgba(30, 64, 175, 0.5);
-            animation: pulse 2s infinite;
-        }
-
-        .map-marker::after {
-            content: '🚗';
-            transform: rotate(45deg);
-            font-size: 1.2rem;
-        }
-
-        .map-marker-ring {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 100px;
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            animation: ring 2s infinite;
-            opacity: 0.5;
-        }
-
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 5px 20px rgba(30, 64, 175, 0.5); }
-            50% { box-shadow: 0 5px 40px rgba(30, 64, 175, 0.8); }
-        }
-
-        @keyframes ring {
-            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
-            100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
-        }
-
-        .vehicle-info {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 12px;
-            margin-top: 15px;
-        }
-
-        .vehicle-info-row {
-            display: flex;
-            justify-content: space-between;
-            color: white;
-            font-size: 0.85rem;
-            padding: 5px 0;
-        }
-
-        .vehicle-info-label {
-            opacity: 0.7;
-        }
-
-        .floating-card {
-            position: absolute;
-            background: white;
-            padding: 15px 20px;
-            border-radius: 15px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            display: block;
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.4));
             animation: float 3s ease-in-out infinite;
-        }
-
-        .floating-card-1 {
-            top: 10%;
-            right: -20px;
-            animation-delay: 0s;
-        }
-
-        .floating-card-2 {
-            bottom: 20%;
-            left: -30px;
-            animation-delay: 1.5s;
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
-        }
-
-        .floating-icon {
-            width: 45px;
-            height: 45px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
         }
 
         .floating-icon.green { background: #dcfce7; }
@@ -1807,12 +1651,8 @@
                 justify-content: center;
             }
 
-            .phone-mockup {
-                max-width: 280px;
-            }
-
-            .floating-card {
-                display: none;
+            .hero-phone-img {
+                max-width: 250px;
             }
 
             .nav-links {
@@ -1950,45 +1790,7 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="phone-screen-content">
-                                <div class="app-header">
-                                    <span class="app-title">Monitor-X</span>
-                                    <span class="app-status">● EN VIVO</span>
-                                </div>
-                                <div class="map-placeholder">
-                                    <div class="map-grid"></div>
-                                    <div class="map-marker-ring"></div>
-                                    <div class="map-marker"></div>
-                                </div>
-                                <div class="vehicle-info">
-                                    <div class="vehicle-info-row">
-                                        <span class="vehicle-info-label">Velocidad</span>
-                                        <span>45 km/h</span>
-                                    </div>
-                                    <div class="vehicle-info-row">
-                                        <span class="vehicle-info-label">Última actualización</span>
-                                        <span>Hace 30 seg</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floating-card floating-card-1">
-                        <div class="floating-icon green" aria-hidden="true">🛡️</div>
-                        <div class="floating-text">
-                            <strong>Seguro 24/7</strong>
-                            <span>Monitoreo constante</span>
-                        </div>
-                    </div>
-                    <div class="floating-card floating-card-2">
-                        <div class="floating-icon blue" aria-hidden="true">📍</div>
-                        <div class="floating-text">
-                            <strong>Cada 30 seg</strong>
-                            <span>Actualización GPS</span>
-                        </div>
-                    </div>
+                    <img src="img/monitor-x-app.png" alt="App Monitor-X - Rastreo GPS vehicular en tiempo real con mapa, velocidad y control remoto" width="460" height="860" class="hero-phone-img">
                 </div>
             </div>
         </section>
@@ -2123,7 +1925,7 @@
                     </div>
                 </div>
                 <div class="app-video">
-                    <img src="img/feature-app.png" alt="App Monitor-X para rastreo GPS vehicular - interfaz iOS y Android" width="600" height="400" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+                    <img src="img/monitor-x-app.png" alt="App Monitor-X para rastreo GPS vehicular - interfaz iOS y Android" width="460" height="860" style="max-width:280px;height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.4));">
                     <a href="https://youtu.be/tfInIoozpU8" target="_blank" rel="noopener" style="display:inline-block;margin-top:15px;color:var(--primary);font-weight:600;text-decoration:none;" aria-label="Ver video demo de la app Monitor-X">
                         ▶ Ver video demo de Monitor-X
                     </a>
