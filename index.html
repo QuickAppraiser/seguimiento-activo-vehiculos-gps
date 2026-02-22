@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es-CO">
 <head>
+    <meta charset="UTF-8">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t==null&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVSB2S65V"></script>
     <script>
@@ -10,7 +14,6 @@
         gtag('config', 'G-GZVSB2S65V');
     </script>
 
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- PRIMARY SEO META TAGS -->
@@ -94,7 +97,7 @@
         "telephone": "+573188383917",
         "email": "contacto@seguimientoactivo.com",
         "image": "https://gpscarro.com/og-image.svg",
-        "logo": "https://gpscarro.com/logo.png",
+        "logo": "https://gpscarro.com/og-image.svg",
         "priceRange": "$45.000 - $130.000 COP",
         "currenciesAccepted": "COP",
         "paymentAccepted": "Cash, Credit Card, Bank Transfer",
@@ -121,7 +124,7 @@
         },
         "sameAs": [
             "https://wa.me/573188383917",
-            "http://www.seguimientoactivo.com"
+            "https://www.seguimientoactivo.com"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -384,13 +387,13 @@
         "name": "Seguimiento Activo",
         "alternateName": "Seguimiento Activo GPS Colombia",
         "url": "https://gpscarro.com/",
-        "logo": "https://gpscarro.com/logo.png",
+        "logo": "https://gpscarro.com/og-image.svg",
         "description": "Empresa colombiana especializada en rastreo GPS vehicular y monitoreo satelital",
         "foundingDate": "2020",
         "foundingLocation": "Colombia",
         "areaServed": "Colombia",
         "sameAs": [
-            "http://www.seguimientoactivo.com"
+            "https://www.seguimientoactivo.com"
         ]
     }
     </script>
@@ -1732,15 +1735,6 @@
             color: white;
         }
 
-        /* SEO Hidden Content */
-        .seo-content {
-            position: absolute;
-            left: -9999px;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-        }
-
         /* Responsive */
         @media (max-width: 968px) {
             .hero-content,
@@ -1837,14 +1831,6 @@
     </style>
 </head>
 <body>
-    <!-- SEO Hidden Content for Search Engines -->
-    <div class="seo-content" aria-hidden="true">
-        <h2>Seguimiento Activo GPS Colombia - Rastreo Vehicular</h2>
-        <p>Seguimiento Activo ofrece servicios de rastreo GPS vehicular en toda Colombia. GPS para carros, motos, camiones y maquinaria amarilla. Monitoreo satelital en tiempo real con la app Monitor-X. Certificado MinTIC y Policía Nacional de Colombia.</p>
-        <p>Servicio de GPS vehicular en Bogotá, Medellín, Cali, Barranquilla, Cartagena, Bucaramanga, Pereira, Manizales, Armenia, Quindío, Eje Cafetero y todo Colombia.</p>
-        <p>Instalación GPS $130.000 pesos. Mensualidad GPS $45.000 pesos. Dispositivo GPS en préstamo. Rastreo cada 30 segundos. Historial 12 meses. Geocercas. Alertas de velocidad. Inmovilización remota.</p>
-    </div>
-
     <!-- Header -->
     <header class="header" role="banner">
         <div class="container header-content">
@@ -2397,15 +2383,16 @@
                 const item = question.parentElement;
                 const isActive = item.classList.contains('active');
 
-                // Close all items
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                // Close all items and reset aria-expanded
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
 
                 // Open clicked item if it wasn't active
                 if (!isActive) {
                     item.classList.add('active');
                     question.setAttribute('aria-expanded', 'true');
-                } else {
-                    question.setAttribute('aria-expanded', 'false');
                 }
             });
 
