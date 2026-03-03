@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- PRIMARY SEO META TAGS -->
-    <title>Seguimiento Activo GPS Colombia | Rastreo Vehicular en Tiempo Real | GPS para Carros, Motos y Camiones</title>
-    <meta name="description" content="Seguimiento Activo - Servicio de rastreo GPS vehicular en Colombia. Monitoreo satelital en tiempo real para carros, motos, camiones y maquinaria. Instalación $130.000, mensualidad $45.000. Certificado MinTIC y Policía Nacional. Contacta a Mauricio Rodríguez.">
+    <title>GPS para Carro Colombia | Rastreo Vehicular Tiempo Real - Seguimiento Activo</title>
+    <meta name="description" content="Rastreo GPS vehicular en tiempo real en Colombia. Instalación $130.000, mensualidad $45.000. App Monitor-X gratis. Certificado MinTIC y Policía Nacional. WhatsApp: 318-838-3917.">
     <meta name="keywords" content="seguimiento activo, seguimientoactivo, gps vehicular colombia, rastreo gps, monitoreo vehicular, gps para carros, gps para motos, gps camiones, rastreo satelital, localizador gps, gps tracker colombia, seguimiento vehicular, gps antirrobo, gps tiempo real, monitor-x, monitorx app, gps bogota, gps medellin, gps cali, gps barranquilla, gps bucaramanga, gps cartagena, gps pereira, gps manizales, gps armenia, gps quindio, gps eje cafetero, rastreo maquinaria amarilla, gps flotas, control flotas colombia, telemetria vehicular, localizacion vehiculos, geocercas, apagar motor remoto, inmovilizador vehicular, control velocidad vehiculo, odometro gps, kilometraje vehiculo, cambio aceite, mantenimiento vehicular, registro encendido apagado, alertas gps, control de flotas">
     <meta name="author" content="Mauricio Rodríguez - Seguimiento Activo GPS">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -2152,11 +2152,15 @@
                 <form class="contact-form" action="https://formsubmit.co/contacto@seguimientoactivo.com" method="POST">
                     <h3>Solicitar Cotización Gratis</h3>
                     <input type="hidden" name="_subject" value="Nueva cotización GPS - gpscarro.com">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://gpscarro.com/#contacto">
+                    <input type="hidden" name="_next" value="https://gpscarro.com/gracias.html">
+                    <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Mauricio Rodriguez te contactará pronto por WhatsApp. Seguimiento Activo GPS.">
                     <div class="form-group">
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com">
                     </div>
                     <div class="form-group">
                         <label for="telefono">WhatsApp / Teléfono</label>
@@ -2182,7 +2186,7 @@
                         <label for="mensaje">Mensaje (opcional)</label>
                         <textarea id="mensaje" name="mensaje" placeholder="¿Cuántos vehículos? ¿Alguna pregunta?"></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">📱 Enviar Cotización por WhatsApp</button>
+                    <button type="submit" class="btn-submit">📩 Enviar Cotización</button>
                 </form>
             </div>
         </section>
@@ -2392,6 +2396,37 @@
             close.addEventListener('click', closeMenu);
             overlay.addEventListener('click', closeMenu);
         })();
+
+        // GA4 Event Tracking - WhatsApp clicks
+        document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'whatsapp_click', {
+                    event_category: 'lead',
+                    event_label: this.closest('section') ? this.closest('section').id : 'floating'
+                });
+            });
+        });
+
+        // GA4 Event Tracking - Form submission
+        var contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function() {
+                gtag('event', 'form_submit', {
+                    event_category: 'lead',
+                    event_label: 'cotizacion_gps'
+                });
+            });
+        }
+
+        // GA4 Event Tracking - Phone calls
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'phone_click', {
+                    event_category: 'lead',
+                    event_label: 'call'
+                });
+            });
+        });
     </script>
 </body>
 </html>
